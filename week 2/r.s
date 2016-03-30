@@ -9,9 +9,9 @@ _start:
 	movl $8,%ecx
 	movl $stringvar,%eax
 r:
-    movb (%eax),%bl
-    xchgb 1(%eax),%bl
-    mov %bl,(%eax)
+    	movb (%eax),%bl
+    	xchgb 1(%eax),%bl
+    	mov %bl,(%eax)
 	addl $2,%eax
 	loop r
 
